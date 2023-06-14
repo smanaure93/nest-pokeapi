@@ -11,9 +11,27 @@
 
 1. Clonar repositorio
 2. Abrir terminal como administrador
-3. Ejecutar `npm i -g @nestjs/cli`
-4. Ejecutar `yarn install`
-5. Ejecutar `docker pull mongo:5.0.0`
-6. Ejecutar `docker-compose up -d`
-7. Ejecutar `yarn start:dev`
-8. Realizar request al endpoint: `/api/v2/seed`
+3. Instalar Nest CLI 
+    ```
+    npm i -g @nestjs/cli
+    ```
+4. Instalar dependencias 
+    ```
+    yarn install
+    ```
+6. Generar archivo ```.env``` a partir de ```.env.template```
+
+7. Instalar imagen de MongoDB 
+    ```
+    docker pull mongo:5.0.0
+    ```
+8. Levantar contenedor de base de datos 
+    ```
+    docker-compose up -d
+    ```
+9. Ejecutar aplicación en modo de desarrollo 
+    ```
+    yarn start:dev
+    ```
+    
+10. Poblar base de datos para desarrollo, consultando el endpoint: ```/api/v2/seed```
