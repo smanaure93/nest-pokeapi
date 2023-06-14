@@ -97,7 +97,7 @@ export class PokemonService {
     }
     console.log(error.status);
     throw new InternalServerErrorException(
-      'No se pudo actualizar el pokemon, contacte a soporte',
+      'Ocurrió un error en la operación, contacte a soporte',
     );
   }
 }
