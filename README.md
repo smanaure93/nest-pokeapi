@@ -25,13 +25,14 @@
     ```
     docker pull mongo:5.0.0
     ```
-8. Levantar contenedor de base de datos 
+8. Levantar contenedores en ambiente de desarrollo por primera vez
     ```
-    docker-compose up -d
+     docker-compose -f docker-compose.dev.yaml up --build
     ```
-9. Ejecutar aplicación en modo de desarrollo 
+
+9. Levantar contenedores en ambiente de desarrollo
     ```
-    yarn start:dev
+     docker-compose -f docker-compose.dev.yaml up -d
     ```
-    
+
 10. Poblar base de datos para desarrollo, consultando el endpoint: ```/api/v2/seed```

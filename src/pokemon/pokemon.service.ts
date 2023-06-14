@@ -43,7 +43,7 @@ export class PokemonService {
         .find()
         .limit(limit)
         .skip(offset)
-        .sort({ no: 1 })
+        .sort({ no: -1 })
         .select('-__v');
     } catch (error) {
       this.handleExceptions(error);
